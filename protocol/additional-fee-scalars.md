@@ -82,6 +82,8 @@ function setOperatorFeeScalars(uint32 operatorFeeScalar, uint64 operatorFeeConst
 
 This function will emit a `ConfigUpdate` log-event, with a new `UpdateType`: `UpdateType.OPERATOR_FEE_SCALARS`.
 
+It is also only callable by the `OperatorFeeManager`, a new role responsible for tuning the operator fee scalars.
+
 In order to ensure a smooth network upgrade process, these scalars are automatically set to zero at the start of the upgrade. 
 
 ## Analysis
