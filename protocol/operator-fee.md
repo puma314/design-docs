@@ -1,4 +1,4 @@
-# Additional fee scalars
+# Operator Fee
 
 #### Metadata
 
@@ -110,6 +110,9 @@ function setOperatorFeeManager(address operatorFeeManager) external onlyOwner;
 This function will emit a `ConfigUpdate` log-event, with a new `UpdateType`: `UpdateType.OPERATOR_FEE_MANAGER`.
 
 The operator fee manager is automatically set to the chain governor at the start of the upgrade.
+
+The operator fee manager is automatically set to the chain governor at the start of the upgrade. The chain governor administers
+the operator fee manager role. 
 
 ## Analysis
 
